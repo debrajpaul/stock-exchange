@@ -16,7 +16,7 @@ This is a stock exchange project for rest applications using Node.js, Express.js
 
 ## Server Configuration:-
 
-    Node 10 software (Ubuntu 18.04, Link:- https://nodejs.org/en/)
+    Node 10 software (Ubuntu 18.04, Link:- (https://nodejs.org/en/))
 
 ## Dependencies
 
@@ -41,13 +41,13 @@ SYMBOL_TYPE=MSFT
 ## Deployment instructions:-
 
     In terminal go to your project directory
-    * copy the .env file to the root directory near package.json
+    * copy the .env file to the project root directory near package.json
     * Type "npm run watch"
 
 ## STOCK API DOCUMENTATION
 
     Go to your default browser or chrome & paste this URL
-    * http://localhost:7021/swagger-ui/
+    * (http://localhost:7021/swagger-ui/)
 
 ## curl http call
 
@@ -59,7 +59,7 @@ curl --location --request GET 'http://localhost:7021/stock-service/stock/30'
 
     Debraj Paul
     contact info:- pauldebraj7@gmail.com
-    LinkedIn:- https://www.linkedin.com/in/debraj-paul
+    LinkedIn:- (https://www.linkedin.com/in/debraj-paul)
 
 ## License
 
