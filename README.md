@@ -1,13 +1,13 @@
-# stock-exchange
+## stock-exchange
 
-This is a boilerplate project for rest applications using Node.js, Express.js, TypeScript and Docker.
+This is a stock exchange project for rest applications using Node.js, Express.js, TypeScript and Docker.
 
 ## What is this repository for?
 
-    typescript interface.
+    Stock Exchange Interface.
 
     Version:- 1.0
-    Git clone :-https://github.com/debrajpaul/express-typeScript-boilerplate.git
+    Git clone :-https://github.com/debrajpaul/stock-exchange.git
 
 ## How do I get set up?
 
@@ -17,7 +17,6 @@ This is a boilerplate project for rest applications using Node.js, Express.js, T
 ## Server Configuration:-
 
     Node 10 software (Ubuntu 18.04, Link:- https://nodejs.org/en/)
-    MongoDB Server version: 4 (Ubuntu 18.04, link:- https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 
 ## Dependencies
 
@@ -28,22 +27,33 @@ This is a boilerplate project for rest applications using Node.js, Express.js, T
 ## .env file
 
 ```
+## Basic data
 PORT=7021
-DEBUG=app,app:*
 PROTOCOL=http
 
-# mongo credential
-MONGO_HOST=127.0.0.1
-MONGO_PORT=27017
-MONGO_DB=roleTuneService
-MONGO_USERNAME=
-MONGO_PASSWORD=
+###### Stock Exchange data
+BASE_URL= https://www.alphavantage.co
+API_KEY= C32DAOMV7UEQ7VRK
+FUNCTION_TYPE=TIME_SERIES_INTRADAY
+SYMBOL_TYPE=MSFT
 ```
 
 ## Deployment instructions:-
 
     In terminal go to your project directory
+    * copy the .env file to the root directory near package.json
     * Type "npm run watch"
+
+## STOCK API DOCUMENTATION
+
+    Go to your default browser or chrome & paste this URL
+    * http://localhost:7021/swagger-ui/
+
+## curl http call
+
+```
+curl --location --request GET 'http://localhost:7021/stock-service/stock/30'
+```
 
 ## Who do I talk to?
 
