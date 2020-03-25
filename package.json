@@ -1,0 +1,51 @@
+{
+    "name": "stock-exchange",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/debrajpaul/stock-exchange.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/debrajpaul/stock-exchange/issues"
+    },
+    "homepage": "https://github.com/debrajpaul/stock-exchange#readme",
+    "scripts": {
+        "test": "jest ./src/tests/*.test.ts",
+        "debug": "DEBUG=app,app:* ts-node-dev --inspect --respawn --transpileOnly src/app.ts",
+        "watch": "DEBUG=app,app:* ts-node-dev --respawn --transpileOnly src/app.ts",
+        "build": "NODE_ENV=production tsc -p .",
+        "start": "NODE_ENV=production node ./dist/app.js"
+    },
+    "dependencies": {
+        "ajv": "^6.5.3",
+        "axios": "^0.19.2",
+        "cors": "^2.8.4",
+        "debug": "^4.1.1",
+        "dotenv": "^6.0.0",
+        "express": "^4.16.3",
+        "numeral": "^2.0.6",
+        "swagger-jsdoc": "^3.2.9",
+        "swagger-ui-express": "^4.0.5"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.5",
+        "@types/debug": "^4.1.5",
+        "@types/dotenv": "^6.1.1",
+        "@types/express": "^4.16.1",
+        "@types/jest": "^24.0.13",
+        "@types/node": "^12.0.2",
+        "@types/numeral": "0.0.26",
+        "@types/swagger-jsdoc": "^0.0.2",
+        "@types/swagger-ui-express": "^3.0.0",
+        "jest": "^24.8.0",
+        "ts-jest": "^24.0.2",
+        "ts-node": "^8.1.0",
+        "ts-node-dev": "^1.0.0-pre.39",
+        "typescript": "^3.3.3"
+    }
+}
