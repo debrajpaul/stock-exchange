@@ -44,6 +44,12 @@ SYMBOL_TYPE=MSFT
     * copy the .env file to the project root directory near package.json
     * Type "npm run watch"
 
+## UNIT TEST SUITE
+
+    In terminal go to your project directory
+    * copy the .env file to the project root directory near package.json
+    * Type "npm run test"
+
 ## STOCK API DOCUMENTATION
 
     Go to your default browser or chrome & paste this URL
