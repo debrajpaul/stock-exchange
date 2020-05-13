@@ -1,6 +1,12 @@
 ## stock-exchange
 
-This is a stock exchange project for rest applications using Node.js, Express.js, TypeScript and Docker.
+    This is a stock exchange project for rest applications using Node.js, Express.js, TypeScript and Docker.
+     
+        * Swagger has also been implemented for easier documentation.
+        * Jest set up is also there to support testing.
+        * Docker set up has been made to make life easier.
+        * Inputs to REST API can be validated here using ajv.
+        * Mongoose is here to help you with the database schema and connection.
 
 ## What is this repository for?
 
@@ -33,7 +39,7 @@ PROTOCOL=http
 
 ###### Stock Exchange data
 BASE_URL= https://www.alphavantage.co
-API_KEY= C32DAOMV7UEQ7VRK
+API_KEY= XXXXXXXXXXX
 FUNCTION_TYPE=TIME_SERIES_INTRADAY
 SYMBOL_TYPE=MSFT
 ```
